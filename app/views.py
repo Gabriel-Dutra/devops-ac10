@@ -70,7 +70,7 @@ def cadastro_vestibulares(request):
         context_instance = RequestContext(request, {
             'title':'Cadastro de vestibulares',
             'vestibulares': Vestibular.objects.all( ),
-            'year':datetime.now().year, })
+            'year':datetime.now().year, }))
         
 def inscricoes(request):
     assert isinstance(request, HttpRequest) 
@@ -80,6 +80,4 @@ def inscricoes(request):
         context_instance = RequestContext(request, {
             'title':'Inscrições de Alunos',
             'inscricoes': Inscricoes.objects.all( ),
-            'year':datetime.now().year, })
-
-)
+            'year':datetime.now().year, }))

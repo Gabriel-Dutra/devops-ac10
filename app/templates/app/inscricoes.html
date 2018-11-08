@@ -1,0 +1,14 @@
+{% extends "app/inscricoes.html" %}
+{% block content %}
+<div class="jumbotron">
+<h1>Inscrições de Alunos</h1>
+</div>
+
+<table class="table">
+<tr><th>Nomes dos Alunos</th></tr>
+{% for aluno in inscricoes %}
+<tr><td>{{ aluno.nome }}</td></tr>
+{% endfor %}
+
+</table>
+{% endblock %}

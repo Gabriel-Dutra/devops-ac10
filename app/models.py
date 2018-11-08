@@ -12,6 +12,6 @@ class Curso(models.Model):
 class Vestibular(models.Model):
     nome = models.CharField(max_length=200)
 class Inscricoes(models.Model):
-    id = models.CharField()
+    id = models.CharField(max_length=100)
     nome = models.CharField(max_length=50)
 

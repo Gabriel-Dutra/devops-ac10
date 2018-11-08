@@ -79,5 +79,4 @@ def inscricoes(request):
         'app/inscricoes.html', 
         context_instance = RequestContext(request, {
             'title':'Inscricoes de Alunos',
-            'inscricoes': Inscricoes.objects.all( ),
-            'year':datetime.now().year, }))
+            'inscricoes': Inscricoes.objects.all( ), }))
